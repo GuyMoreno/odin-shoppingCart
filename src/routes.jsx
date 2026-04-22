@@ -13,10 +13,12 @@ const router = createBrowserRouter([
     errorElement: <ErrorPage />,
     children: [
       {
+        // if url = "/" show Home...
         index: true,
         element: <Home />,
       },
       {
+        // if url = "/shop" show Shop...
         path: "shop",
         element: <Shop />,
       },
