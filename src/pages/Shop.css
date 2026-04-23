@@ -1,20 +1,34 @@
 /* Shop.css */
 .product-card {
-  background: var(--bg);
-  color: var(--text);
+
   border: 1px solid var(--border);
+
   padding: 16px;
+
   border-radius: 10px;
-  transition: 0.2s ease;
+
+  background: white;
+
+  transition: 0.2s;
+
 }
 
 .product-card:hover {
+
   transform: translateY(-2px);
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+
+  border-color: var(--accent);
+
+  box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+
 }
 
 .shop-grid {
+
   display: grid;
+
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+
   gap: 16px;
+
 }
