@@ -8,6 +8,13 @@
   --font: system-ui, sans-serif;
 }
 
+#root {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 16px;
+  min-height: 100vh;
+}
+
 /* base layout */
 body {
   margin: 0;
