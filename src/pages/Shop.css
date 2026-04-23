@@ -1,34 +1,132 @@
 /* Shop.css */
+
+/* GRID */
+.shop-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 16px;
+}
+
+/* CARD */
 .product-card {
-
   border: 1px solid var(--border);
+  border-radius: 12px;
+  background: var(--bg);
+  padding: 12px;
 
-  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 
-  border-radius: 10px;
-
-  background: white;
-
-  transition: 0.2s;
-
+  transition: 0.2s ease;
 }
 
 .product-card:hover {
-
-  transform: translateY(-2px);
-
   border-color: var(--accent);
-
-  box-shadow: 0 6px 20px rgba(0,0,0,0.08);
-
+  box-shadow: 0 6px 14px rgba(0,0,0,0.06);
+  transform: translateY(-2px);
 }
 
-.shop-grid {
+/* IMAGE */
+.product-image {
+  width: 100%;
+  height: 100px;
+  object-fit: contain;
+  background: #fafafa;
+  border-radius: 8px;
+  padding: 6px;
+}
 
-  display: grid;
+/* CONTENT WRAPPER */
+.product-info {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin-top: 8px;
+}
 
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+/* TITLE */
+.product-title {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.3;
+  height: 36px;
+  overflow: hidden;
+  margin: 0;
+}
 
-  gap: 16px;
+/* PRICE */
+.product-price {
+  font-size: 14px;
+  font-weight: 600;
+  margin: 0;
+}
 
+/* PUSH BOTTOM */
+.product-bottom {
+  margin-top: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+/* QUANTITY */
+.quantity-controls {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 2px 6px;
+
+  width: 88px;
+}
+
+.quantity-controls button {
+  border: none;
+  background: transparent;
+  font-size: 15px;
+  cursor: pointer;
+  color: var(--text);
+}
+
+.quantity-controls button:hover {
+  color: var(--accent);
+}
+
+.quantity-controls input {
+  border: none;
+  width: 28px;
+  text-align: center;
+  font-size: 13px;
+  background: transparent;
+}
+
+.quantity-controls input::-webkit-outer-spin-button,
+.quantity-controls input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* BUTTON */
+.add-btn {
+  width: 100%;
+  padding: 8px;
+  border-radius: 8px;
+
+  border: 1px solid var(--border);
+  background: transparent;
+
+  font-size: 13px;
+  color: var(--text);
+  cursor: pointer;
+
+  transition: 0.2s ease;
+}
+
+.add-btn:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+  background: rgba(170, 59, 255, 0.06);
 }
