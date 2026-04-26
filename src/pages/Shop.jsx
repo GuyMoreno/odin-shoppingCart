@@ -103,6 +103,7 @@ const Shop = () => {
 
         <button
           className="add-btn"
+          aria-label="Add to Cart"
           onClick={() =>
             addToCart(product, quantities[product.id] || 1)
           }
