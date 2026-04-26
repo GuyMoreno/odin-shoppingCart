@@ -86,7 +86,7 @@ const Shop = () => {
 
       <div className="product-bottom">
         <div className="quantity-controls">
-          <button onClick={() => decrease(product.id)}>-</button>
+          <button onClick={() => decrease(product.id)} aria-label="decrease">-</button>
           <input
             type="number"
             min="1"
@@ -98,7 +98,7 @@ const Shop = () => {
               }))
             }
           />
-          <button onClick={() => increase(product.id)}>+</button>
+          <button onClick={() => increase(product.id)} aria-label="increase">+</button>
         </div>
 
         <button
