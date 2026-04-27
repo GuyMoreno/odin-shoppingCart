@@ -1,10 +1,23 @@
+/* Navbar.css */
 nav {
+
   display: flex;
   justify-content: space-between;
   align-items: center;
-
   padding: 1rem 0;
-  border-bottom: 1px solid var(--border);
+  background: var(--bg);
+  border: 0.1px solid var(--border);
+  border-radius: 12px;
+  /* floating effect */
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+  position: sticky;
+  top: 10px;
+  z-index: 100;
+  /* smooth hover feel */
+  transition: all 0.2s ease;
+  transform: translateY(-2px);
+  box-shadow: 0 10px 26px rgba(0, 0, 0, 0.1);
+
 }
 
 nav ul {
@@ -12,7 +25,7 @@ nav ul {
   gap: 1rem;
   list-style: none;
   margin: 0;
-  padding: 0;
+  padding: 8px;
 }
 
 nav a {
@@ -34,3 +47,4 @@ nav a:active {
   transform: translateY(0px);
   background: var(--border);
 }
+
