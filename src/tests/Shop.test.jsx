@@ -49,5 +49,6 @@ describe("Shop cart flow", () => {
     const cartLink = screen.getByText(/cart/i);
 
     expect(cartLink).toBeInTheDocument();
+    // expect(cartLink).toHaveTextContent("1");
   });
 });
